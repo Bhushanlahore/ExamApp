@@ -1,0 +1,5 @@
+package com.exam.service.implement;
+
+public class QuizServiceImpl {
+
+}

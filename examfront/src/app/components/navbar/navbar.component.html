@@ -1,0 +1,28 @@
+<!-- this is nav bar -->
+<mat-toolbar class="c1">
+    <a routerLink="/"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+     <mat-icon>backpack</mat-icon>
+     <span>Exam App</span>
+</a>
+
+   <span class="example-spacer"></span>
+
+   <a 
+   *ngIf="!login.isLoggedIn()"
+   [routerLink]="'/login'"
+   mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   Login</a>
+
+   <a 
+   *ngIf="!login.isLoggedIn()"
+   [routerLink]="'/signup'"
+   mat-icon-button style="margin-left: 20px; margin-right: 10px;" class=" example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   Register</a>
+
+   <a 
+   (click)="logout()"
+   *ngIf="login.isLoggedIn()"
+   mat-icon-button style="margin-left: 20px; margin-right: 10px;" class=" example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   Log Out</a>
+ </mat-toolbar>

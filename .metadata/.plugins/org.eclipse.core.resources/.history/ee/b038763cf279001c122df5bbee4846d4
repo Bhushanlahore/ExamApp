@@ -1,0 +1,40 @@
+package com.exam.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="roles")
+public class Role {
+
+	private long roleid;
+	private String rolename;
+	
+	public Role(long roleid, String rolename) {
+		super();
+		this.roleid = roleid;
+		this.rolename = rolename;
+	}
+
+	public Role() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public long getRoleid() {
+		return roleid;
+	}
+
+	public void setRoleid(long roleid) {
+		this.roleid = roleid;
+	}
+
+	public String getRolename() {
+		return rolename;
+	}
+
+	public void setRolename(String rolename) {
+		this.rolename = rolename;
+	}
+	
+	
+}

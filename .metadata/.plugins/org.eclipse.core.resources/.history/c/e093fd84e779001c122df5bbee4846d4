@@ -1,0 +1,11 @@
+#database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/examapp
+spring.datasource.username=root
+spring.datasource.password=9025
+
+
+#jpa configuration
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MYSQL8Dialect
+spring.jpa.hibernate.ddl-auto=update   
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
